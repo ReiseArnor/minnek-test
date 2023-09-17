@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+#dog-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#dog-table td, #dog-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#dog-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#dog-table tr:hover {background-color: #ddd;}
+
+#dog-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #282a3a;
+  color: white;
+}
+
+.header {
+    background-color: #282a3a;
+    color: white;
+}
+
+input, select {
+  padding: 10px 5px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-add {
+    background-color: #4caf50;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
+}
+
+.button-modify {
+    background-color: #008cba;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
+}
+
+.button-delete {
+    background-color: #f44336;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
+}

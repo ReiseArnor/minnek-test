@@ -8,5 +8,48 @@
     <link rel="stylesheet" href="command-and-conquer.css">
 </head>
 <body>
+    <div>
+        <div class="container">
+            <div class="header">
+                <h2>Add new dog</h2>
+            </div>
+            <form action="javascript:add_dog()">
+               <label for="add-dog">Dog name</label>
+               <input type="string" id="new-breed" placeholder="bulldog" pattern="[a-zA-Z]+" required>
+               <label for="add-dog-sub-breeds" >Dog sub-breeds (optional)</label>
+               <input type="string" id="new-sub-breed" placeholder="boston,english,french" pattern="^[a-zA-Z]+(,[a-zA-Z]+)*$">
+               <input class="button-add" type="submit" value="Add"></input>
+            </form>
+        </div>
 
+        <div class="container">
+            <div class="header">
+                <h2>Modify dog</h2>
+            </div>
+            <form action="javascript:modify_dog()">
+               <label for="id">ID</label>
+               <input type="number" id="modify-id" placeholder="0" min="0" required>
+               <label for="add-dog">New name</label>
+               <input type="string" id="modify-breed" placeholder="bulldog" pattern="[a-zA-Z]+" required>
+               <label for="add-dog-sub-breeds" >New sub-breeds (optional)</label>
+               <input type="string" id="modify-sub-breed" placeholder="boston,english,french" pattern="^[a-zA-Z]+(,[a-zA-Z]+)*$">
+               <input class="button-modify" type="submit" value="modify"></input>
+            </form>
+        </div>
+
+        <div class="container">
+            <label for="search">Search</label>
+            <input type="string" id="search" onkeyup="update_search()">
+            <select id="search-type">
+                <option value="breed">breed</option>
+                <option value="sub-breed">sub-breed</option>
+            </select>
+        </div>
+
+        <div>
+            <table id="dog-table">
+            </table>
+        </div>
+        <script src="command-and-conquer.js"></script>
+    </div>
 </body>
