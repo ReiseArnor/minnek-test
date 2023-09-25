@@ -10,7 +10,11 @@ const get_dogs = async () => {
     const response = await fetch("https://dog.ceo/api/breeds/list/all");
     const json = await response.json();
     const dogs = json.message;
-
+    console.log("dogs:");
+    console.log(dogs);
+    const ds = Array.from(dogs);
+    console.log("ds");
+    console.log(ds);
     for (var breed in dogs) {
         var sub_breeds = await get_sub_breeds(breed);
         current_dog_list[current_dog_list.length] = [

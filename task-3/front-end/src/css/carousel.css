@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.buttonBack {
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  transform: translateY(-600%);
+}
+
+.buttonNext {
+  position: absolute;
+  top: 50%;
+  right: -95%;
+  transform: translateX(-50%);
+  transform: translateY(-600%);
+}
+
+.arrow {
+    font-size: 40px;
+}
